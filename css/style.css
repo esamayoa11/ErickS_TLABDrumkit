@@ -1,28 +1,10 @@
-/* Background holder */
-.background-holder {
-  position: relative;
-  width: 750px;
-  height: 450px;
-  border: 2px solid black; 
-  overflow: hidden;
-  margin: 0 auto;
-}
-
-/* New Background Image */
-.background-img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: 1; 
-}
-
 html, body {
   margin: 0;
   padding: 0;
+  height: 100%;
   font-family: sans-serif;
+  background: url('./images/Drumset-Labeled.jpg');
+  background-size: cover;
   font-size: 10px;
   background-color: #000;
 }
@@ -31,8 +13,8 @@ html, body {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   z-index: 2;
   display: flex;
   flex-wrap: wrap;
@@ -44,7 +26,7 @@ html, body {
   position: absolute;
   border: 0.4rem solid black;
   border-radius: 0.5rem;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   padding: 1rem 0.5rem;
   transition: all 0.07s ease;
   width: 6rem;
