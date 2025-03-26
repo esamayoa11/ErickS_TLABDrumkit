@@ -1,3 +1,11 @@
+# Erick's notes
+For this exercise, I changed the background to a stock photo that I found online that resembles a drummer's POV. I wanted to challenge myself and get a better understanding of using specific X, Y coordinates within my HTML layout to place my keyboard cue keys in an exact location so that they would play the corresponding drum kit piece.I did this by first creating a figma layout that allowed me to accomplish the following: 
+- It allowed me to quickly see how large I could make the image before sacrificing image quality or distorting
+- I then created a background holder for my image and placed the image in it a locked/fixed position
+- I then used ellipsis markers to track my left(X) and top(Y) coordinates to make key placement easier
+
+If repeating or enhancing this project, I would start by finding a clean stock image without descriptors written on it. However, they were kind of very helpful this time around to a non-drummer. 
+
 # soundBytes DrumKit
 
 This Project is a modification from [WesBos Javascript 30](https://courses.wesbos.com/account/signin)
