@@ -3,10 +3,10 @@ html, body {
   padding: 0;
   height: 100%;
   font-family: sans-serif;
-  background: url('./images/Drumset-Labeled.jpg');
+  background: url('./images/Drumset-Labeled.jpg') no-repeat center center fixed;
   background-size: cover;
+  background-color: white;
   font-size: 10px;
-  background-color: #000;
 }
 
 .keys {
