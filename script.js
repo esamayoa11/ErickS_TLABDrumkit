@@ -1,24 +1,30 @@
 function playSound(e) {
-    const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
-    const key = document.querySelector(`.key[data-key="${e.keyCode}"]`);
+    const activeSlide = document.querySelector('.carousel-slide.active');
+    const key = activeSlide.querySelector(`.key[data-key="${e.keyCode}"]`);
+    const audio = activeSlide.querySelector(`audio[data-key="${e.keyCode}"]`);
     
     if (!audio || !key) return;
 
+    key.classList.add('playing');
     audio.currentTime = 0;
     audio.play();
-    key.classList.add("playing");
 }
 
 function removeTransition(e) {
-    if (e.propertyName !== "transform") return;
-    this.classList.remove("playing");
+    if (e.propertyName !== 'transform') return;
+    this.classList.remove('playing');
 }
 
-const keys = document.querySelectorAll(".key");
-keys.forEach(key => key.addEventListener ("transitionend", removeTransition));
-window.addEventListener("keydown", playSound);
+// Add transition to keys
+function setupKeyListeners() {
+    const allKeys = document.querySelectorAll('.key');
+    allKeys.forEach(key => key.addEventListener('transitionend', removeTransition));
+}
 
-// Carousel code
+setupKeyListeners();
+window.addEventListener('keydown', playSound);
+
+// Carousel code nav
 let currentSlide = 0;
 const slides = document.querySelectorAll('.carousel-slide');
 
