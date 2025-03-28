@@ -1,3 +1,48 @@
+.carousel {
+  position: relative;
+  width: 750px;
+  height: 450px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.carousel-slide {
+  display: none;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-slide.active {
+  display: block;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.6);
+  color: white;
+  border: none; 
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.carousel-btn.prev {
+  left: 10px;
+}
+
+.carousel-btn.next {
+  right: 10px;
+}
+
+@media (max-width: 800px) {
+  .carousel, .background-holder {
+    width: 100%;
+    height: auto;
+}
+
 body,
 html {
   margin: 0;
@@ -6,7 +51,8 @@ html {
   height: 100%;
 }
 
-.background-holder {
+.background-holder,
+.background-holder2 {
   position: relative;
   width: 750px; 
   height: 450px;
@@ -22,6 +68,7 @@ html {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  z-index: 1;
 }
 
 .keys {
@@ -49,17 +96,22 @@ html {
   color: white;
   background: black;
   text-shadow: 0 0 1rem black;
+  z-index: 2;
+}
+.key:hover {
+  transform:scale(1.5);
+  cursor: pointer;
 }
 
 .playing {
-  transform: scale(1.1);
+  transform: scale(1.1) rotate(-1deg);
   border-color: #ffc600;
   box-shadow: 0 0 1rem #ffc600;
 }
 
 kbd {
   display: block;
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: #ffc600;
 }
 
