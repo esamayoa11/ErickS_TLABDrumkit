@@ -67,6 +67,7 @@ html {
   border: 2px solid black;
   overflow: hidden;
   margin: 0 auto;
+  display: none;
 }
 
 .background-img {
