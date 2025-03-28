@@ -27,6 +27,11 @@
   padding: 0.5rem 1rem;
   cursor: pointer;
   z-index: 10;
+  transition: background 0.2s ease;
+}
+
+.carousel-btn:hover {
+  background: rgba(0,0,0,0.8);
 }
 
 .carousel-btn.prev {
@@ -38,9 +43,12 @@
 }
 
 @media (max-width: 800px) {
-  .carousel, .background-holder {
+  .carousel, 
+  .background-holder,
+  .background-holder2 {
     width: 100%;
     height: auto;
+  }
 }
 
 body,
