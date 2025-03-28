@@ -7,64 +7,64 @@
   <link rel="icon" href="https://fav.farm/🔥" />
 </head>
 <body>
+  
   <div class="carousel">
-    <button class ="carousel-btn prev" onclick="prevSlide()">❮</button>
-    <button class="carousel-btn next" onclick="nextSlide()">❯</button>
-
+    
 <!--Drum kit Container-->   
     <div class="carousel-slide active">
       <div class="background-holder">
-        <img class="background-img" src="./images/Drumset-Labeled.jpg" alt="Drum Set">
-          <div class="keys">
+        <img class="background-img" src="./images/Drumset-Labeled.jpg" style="width:100%;" alt="Drum Kit">
+        <div class="keys">
 <!-- Drum kit keys -->    
         <div data-key="65" class="key" style="top: 320px; left: 30px;">
-        <kbd>A</kbd>
-        <span class="sound">Tom1</span>
+          <kbd>A</kbd>
+          <span class="sound">Tom1</span>
         </div>
         <div data-key="83" class="key" style="top: 205px; left: 82px;">
-        <kbd>S</kbd>
-        <span class="sound">Hihat</span>
+          <kbd>S</kbd>
+          <span class="sound">Hihat</span>
         </div>
         <div data-key="68" class="key" style="top: 105px; left: 30px;">
-        <kbd>D</kbd>
-        <span class="sound">Splash</span>
+          <kbd>D</kbd>
+          <span class="sound">Splash</span>
         </div>
         <div data-key="70" class="key" style="top: 10px; left: 185px;">
-        <kbd>F</kbd>
-        <span class="sound">Crash1</span>
+          <kbd>F</kbd>
+          <span class="sound">Crash1</span>
         </div>
-        <div data-key="71" class="key" style="top: 80px; left: 325px;">
-        <kbd>G</kbd>
+          <div data-key="71" class="key" style="top: 80px; left: 325px;">
+          <kbd>G</kbd>
         <span class="sound">Tom2</span>
         </div>
         <div data-key="72" class="key" style="top: 10px; left: 455px">
-        <kbd>H</kbd>
-        <span class="sound">Crash2</span>
+          <kbd>H</kbd>
+          <span class="sound">Crash2</span>
         </div>
         <div data-key="74" class="key" style="top: 80px; left: 635px;">
-        <kbd>J</kbd>
-        <span class="sound">Ride</span>
+          <kbd>J</kbd>
+          <span class="sound">Ride</span>
         </div>
         <div data-key="75" class="key" style="top: 315px; left: 600px;">
-        <kbd>K</kbd>
-        <span class="sound">Tom3</span>
+          <kbd>K</kbd>
+          <span class="sound">Tom3</span>
         </div>
         <div data-key="86" class="key" style="top: 245px; left: 330px;">
-        <kbd>V</kbd>
-        <span class="sound">Snare</span>
+          <kbd>V</kbd>
+          <span class="sound">Snare</span>
         </div>
         <div data-key="67" class="key" style="top: 180px; left: 215px;">
-        <kbd>C</kbd>
-        <span class="sound">Cowbell</span>
+          <kbd>C</kbd>
+          <span class="sound">Cowbell</span>
         </div>
         <div data-key="66" class="key" style="top: 180px; left: 460px;">
-        <kbd>B</kbd>
-        <span class="sound">Chime</span>
+          <kbd>B</kbd>
+          <span class="sound">Chime</span>
         </div>
         <div data-key="78" class="key" style="top: 305px; left: 460px;">
-        <kbd>N</kbd>
-        <span class="sound">Kick</span>
-    </div>
+          <kbd>N</kbd>
+          <span class="sound">Kick</span>
+        </div>
+      </div>
 <!-- Drum audio -->
   <audio data-key="65" src="sounds/tom.wav"></audio>
   <audio data-key="83" src="sounds/hihat.wav"></audio>
@@ -80,116 +80,125 @@
   <audio data-key="78" src="sounds/kick.wav"></audio>
 </div>
 </div>
+
 <!-- Piano carousel slide -->
 <div class="carousel-slide">
   <div class="background-holder2">
-    <img class="background-img2" src="./images/keys.jpg" alt="keys">
+    <img class="background-img2" src="./images/keys.jpg" style="width: 100%;" alt="Piano keys">
     <div class="keys">
 
 <!-- Piano Keys White Keys-->
       <div data-key="65" class="key" style="top: 260px; left: 9px;">
-      <kbd>A</kbd>
-      <span class="sound">F</span>
+        <kbd>A</kbd>
+        <span class="sound">F</span>
       </div>
       <div data-key="83" class="key" style="top: 260px; left: 76px;">
-      <kbd>S</kbd>
-      <span class="sound">G</span>
+        <kbd>S</kbd>
+        <span class="sound">G</span>
       </div>
       <div data-key="68" class="key" style="top: 260px; left: 143px;">
-      <kbd>D</kbd>
-      <span class="sound">A</span>
+        <kbd>D</kbd>
+        <span class="sound">A</span>
       </div>
       <div data-key="70" class="key" style="top: 260px; left: 211px;">
-      <kbd>F</kbd>
-      <span class="sound">B</span>
+        <kbd>F</kbd>
+        <span class="sound">B</span>
       </div>
       <div data-key="71" class="key" style="top: 260px; left: 279px;">
-      <kbd>G</kbd>
-      <span class="sound">C</span>
+        <kbd>G</kbd>
+        <span class="sound">C</span>
       </div>
       <div data-key="72" class="key" style="top: 260px; left: 347px">
-      <kbd>H</kbd>
-      <span class="sound">D</span>
+        <kbd>H</kbd>
+        <span class="sound">D</span>
       </div>
       <div data-key="74" class="key" style="top: 260px; left: 415px;">
-      <kbd>J</kbd>
-      <span class="sound">E</span>
+        <kbd>J</kbd>
+        <span class="sound">E</span>
       </div>
       <div data-key="75" class="key" style="top: 260px; left: 483px;">
-      <kbd>K</kbd>
-      <span class="sound">F</span>
+        <kbd>K</kbd>
+        <span class="sound">F</span>
       </div>
       <div data-key="76" class="key" style="top: 260px; left: 552px;">
-      <kbd>L</kbd>
-      <span class="sound">G</span>
+        <kbd>L</kbd>
+        <span class="sound">G</span>
       </div>
       <div data-key="186" class="key" style="top: 260px; left: 622px;">
-      <kbd>;</kbd>
-      <span class="sound">A</span>
+        <kbd>;</kbd>
+        <span class="sound">A</span>
       </div>
       <div data-key="222" class="key" style="top: 260px; left: 691px;">
-      <kbd>'</kbd>
-      <span class="sound">B</span>
+        <kbd>'</kbd>
+        <span class="sound">B</span>
       </div>
 
   <!-- Black keys -->
       <div data-key="87" class="key" style="top: 160px; left: 27px;">
-      <kbd>W</kbd>
-      <span class="sound">Fsharp</span>
+        <kbd>W</kbd>
+        <span class="sound">Fsharp</span>
       </div>
       <div data-key="69" class="key" style="top: 160px; left: 110px;">
-      <kbd>E</kbd>
-      <span class="sound">Gsharp</span>
+        <kbd>E</kbd>
+        <span class="sound">Gsharp</span>
       </div>
       <div data-key="82" class="key" style="top: 160px; left: 187px;">
-      <kbd>R</kbd>
-      <span class="sound">Asharp</span>
+        <kbd>R</kbd>
+        <span class="sound">Asharp</span>
       </div>
       <div data-key="89" class="key" style="top: 160px; left: 310px;">
-      <kbd>Y</kbd>
-      <span class="sound">Csharp</span>
+        <kbd>Y</kbd>
+        <span class="sound">Csharp</span>
       </div>
       <div data-key="85" class="key" style="top: 160px; left: 390px;">
-      <kbd>U</kbd>
-      <span class="sound">Dsharp</span>
+        <kbd>U</kbd>
+        <span class="sound">Dsharp</span>
       </div>
       <div data-key="73" class="key" style="top: 160px; left: 513px;">
-      <kbd>I</kbd>
-      <span class="sound">Fsharp</span>
+        <kbd>I</kbd>
+        <span class="sound">Fsharp</span>
       </div>
       <div data-key="79" class="key" style="top: 160px; left: 593px;">
-      <kbd>O</kbd>
-      <span class="sound">Gsharp</span>
+        <kbd>O</kbd>
+        <span class="sound">Gsharp</span>
       </div>
       <div data-key="80" class="key" style="top: 160px; left: 673px;">
-      <kbd>P</kbd>
-      <span class="sound">Asharp</span>
+        <kbd>P</kbd>
+        <span class="sound">Asharp</span>
       </div>
-  </div>
+    </div>
 
 <!-- Piano Audio -->
-  <audio data-key="65" src="sounds/Fkey.mp3"></audio>
-  <audio data-key="83" src="sounds/Gkey.mp3"></audio>
-  <audio data-key="68" src="sounds/Akey.mp3"></audio>
-  <audio data-key="70" src="sounds/Bkey.mp3"></audio>
-  <audio data-key="71" src="sounds/Ckey.mp3"></audio>
-  <audio data-key="72" src="sounds/Dkey.mp3"></audio>
-  <audio data-key="74" src="sounds/Ekey.mp3"></audio>
-  <audio data-key="75" src="sounds/F2key.mp3"></audio>
-  <audio data-key="76" src="sounds/G2key.mp3"></audio>
-  <audio data-key="186" src="sounds/A2key.mp3"></audio>
-  <audio data-key="222" src="sounds/B2key.mp3"></audio>
-  <audio data-key="87" src="sounds/Fsharpkey.mp3"></audio>
-  <audio data-key="69" src="sounds/Gsharpkey.mp3"></audio>
-  <audio data-key="82" src="sounds/Asharpkey.mp3"></audio>
-  <audio data-key="89" src="sounds/Csharpkey.mp3"></audio>
-  <audio data-key="85" src="sounds/Dsharpkey.mp3"></audio>
-  <audio data-key="73" src="sounds/Fsharp2key.mp3"></audio>
-  <audio data-key="79" src="sounds/Gsharp2key.mp3"></audio>
-  <audio data-key="80" src="sounds/Asharp2key.mp3"></audio>
-</div>
-</div>
+      <audio data-key="65" src="sounds/Fkey.mp3"></audio>
+      <audio data-key="83" src="sounds/Gkey.mp3"></audio>
+      <audio data-key="68" src="sounds/Akey.mp3"></audio>
+      <audio data-key="70" src="sounds/Bkey.mp3"></audio>
+      <audio data-key="71" src="sounds/Ckey.mp3"></audio>
+      <audio data-key="72" src="sounds/Dkey.mp3"></audio>
+      <audio data-key="74" src="sounds/Ekey.mp3"></audio>
+      <audio data-key="75" src="sounds/F2key.mp3"></audio>
+      <audio data-key="76" src="sounds/G2key.mp3"></audio>
+      <audio data-key="186" src="sounds/A2key.mp3"></audio>
+      <audio data-key="222" src="sounds/B2key.mp3"></audio>
+      <audio data-key="87" src="sounds/Fsharpkey.mp3"></audio>
+      <audio data-key="69" src="sounds/Gsharpkey.mp3"></audio>
+      <audio data-key="82" src="sounds/Asharpkey.mp3"></audio>
+      <audio data-key="89" src="sounds/Csharpkey.mp3"></audio>
+      <audio data-key="85" src="sounds/Dsharpkey.mp3"></audio>
+      <audio data-key="73" src="sounds/Fsharp2key.mp3"></audio>
+      <audio data-key="79" src="sounds/Gsharp2key.mp3"></audio>
+      <audio data-key="80" src="sounds/Asharp2key.mp3"></audio>
+    </div>
+  </div>
 
+  <button class="carousel-btn prev" onclick="prevSlide()">❮</button>
+  <button class="carousel-btn next" onclick="nextSlide()">❯</button>
+
+  <div class="dot-container">
+    <span class="dot active" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+  </div>
+  
   <script src="./script.js"></script>
 </body>
 </html>
